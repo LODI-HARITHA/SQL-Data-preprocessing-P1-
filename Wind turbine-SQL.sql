@@ -21,6 +21,14 @@ Failure_status varchar
 
 -- Mean --
 select avg(power) from wind_turbine
+ select avg(Wind_speed) from wind_turbine
+ select avg(Nacelle_ambient_temperature) from wind_turbine
+ select avg(Generator_bearing_temperature) from wind_turbine
+ select avg(Gear_oil_temperature) from wind_turbine
+ select avg(Ambient_temperature) from wind_turbine
+ select avg(Rotor_Speed) from wind_turbine
+ 
+ 
 
 -- Medain --
 select Wind_speed from wind_turbine order by Wind_speed offset(select count(*)from wind_turbine)/2 limit 1
